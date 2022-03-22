@@ -1,0 +1,10 @@
+our_input = "EY EDİP ADANADA PİDE YE"               #PALİNDROME ASSİGNMENT#
+word = ""
+for i in our_input.casefold():
+#CASEFOLD LOWER'DAN DAHA KAPSAMLI AMA ÖZELLİK OLARAK AYNI
+  if i.isalnum():
+    word += i
+if word == word[::-1]:
+  print(f"{our_input} is a palindrome")
+else:
+  print(f"{our_input} is not a palindrome"
